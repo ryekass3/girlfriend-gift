@@ -1,0 +1,41 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: #fff0f5;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #ffb6c1;
+  padding: 10px;
+}
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+h1 {
+  color: #d6336c;
+  margin-top: 20px;
+}
+
+.timeline .event {
+  background: white;
+  margin: 15px auto;
+  padding: 15px;
+  width: 70%;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.note {
+  background: #ffe6eb;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  display: inline-block;
+}
