@@ -55,5 +55,5 @@ h1 {
 
 .swiper-slide img{
   width: 75%;
-  height: min-content;
+  height: fit-content;
 }
