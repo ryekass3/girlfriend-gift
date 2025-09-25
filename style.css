@@ -57,3 +57,109 @@ h1 {
   width: 75%;
   height: fit-content;
 }
+
+nav a:hover {
+  color: #ffe6eb;
+}
+
+.music-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.audio-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 20px;
+  margin: 20px 0;
+}
+
+.audio-cell {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(214, 51, 108, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  vertical-align: top;
+  width: 33.33%;
+  border: 2px solid #ffe6eb;
+}
+
+.audio-cell:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(214, 51, 108, 0.2);
+  border-color: #ffb6c1;
+}
+
+.song-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #d6336c;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.artist-name {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+audio {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 20px;
+  outline: none;
+}
+
+.empty-slot {
+  height: 54px;
+  background: linear-gradient(45deg, #ffe6eb, #ffb6c1);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d6336c;
+  font-style: italic;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .audio-table {
+    border-spacing: 15px;
+  }
+  
+  .audio-cell {
+    padding: 20px;
+  }
+  
+  .song-title {
+    font-size: 1.1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .audio-table, .audio-table tbody, .audio-table tr {
+    display: block;
+    width: 100%;
+  }
+  
+  .audio-cell {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 10px auto;
+  }
+  
+  nav a {
+    margin: 0 8px;
+    font-size: 0.9rem;
+  }
+}
